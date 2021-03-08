@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<div class="toolbar">
+
+			<div class="toolbar__amount">
+				Количество заготовок <br>
+				<div class="toolbar__btn" data-drop="drop" onselectstart="return false" data-btn="oneBlank">
+					1
+				</div>
+				<div class="toolbar__btn" data-drop="drop" onselectstart="return false" data-btn="twoBlanks" id="1">
+					2
+				</div>
+				<div class="toolbar__btn" data-drop="drop" onselectstart="return false" data-btn="threeBlanks" id="2">
+					3
+				</div>
+				<div class="toolbar__btn" data-drop="drop" onselectstart="return false" data-btn="forBlanks" id="3">
+					4
+				</div>
+
+				<div class="toolbar__drop">
+
+					<div class="toolbar__size-drop ">
+						<span>Заготовка 1:</span>
+						<label>
+							Длина
+							<input class="toolbar__input" data-type="input" data-drop="first_lenght" type="number" min="0"
+								placeholder="0">
+						</label>
+						<label>
+							Ширина
+							<input class="toolbar__input" data-type="input" data-drop="first_width" type="number" min="0"
+								placeholder="0">
+						</label>
+						<label>
+							Высота
+							<input class="toolbar__input" data-type="input" data-drop="first_height" type="number" min="0"
+								placeholder="0">
+						</label>
+					</div>
+
+					<div class="toolbar__size-drop">
+						<span>Заготовка 2:</span>
+						<label>
+							Длина
+							<input class="toolbar__input" data-type="input" data-drop="second_lenght" type="number" min="0"
+								placeholder="0">
+						</label>
+						<label>
+							Ширина
+							<input class="toolbar__input" data-type="input" data-drop="second_width" type="number" min="0"
+								placeholder="0">
+						</label>
+						<label>
+							Высота
+							<input class="toolbar__input" data-type="input" data-drop="second_height" type="number" min="0"
+								placeholder="0">
+						</label>
+
+					</div>
+
+					<div class="toolbar__size-drop">
+						<span>Заготовка 3:</span>
+						<label>
+							Длина
+							<input class="toolbar__input" data-type="input" data-drop="thrid_lenght" type="number" min="0"
+								placeholder="0">
+						</label>
+						<label>
+							Ширина
+							<input class="toolbar__input" data-type="input" data-drop="thrid_width" type="number" min="0"
+								placeholder="0">
+						</label>
+						<label>
+							Высота
+							<input class="toolbar__input" data-type="input" data-drop="thrid_height" type="number" min="0"
+								placeholder="0">
+						</label>
+
+					</div>
+
+					<div class="toolbar__size-drop">
+						<span>Заготовка 4:</span>
+						<label>
+							Длина
+							<input class="toolbar__input" data-type="input" data-drop="forth_lenght" type="number" min="0"
+								placeholder="0">
+						</label>
+						<label>
+							Ширина
+							<input class="toolbar__input" data-type="input" data-drop="forth_width" type="number" min="0"
+								placeholder="0">
+						</label>
+						<label>
+							Высота
+							<input class="toolbar__input" data-type="input" data-drop="forth_height" type="number" min="0"
+								placeholder="0">
+						</label>
+					</div>
+
+					<div class="toolbar__btn" onselectstart="return false" data-drop="input">
+						Ввод
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="toolbar__btn" data-type="print">
+				print
+			</div>
+
+		</div>
+
+		<div class="tamplate">
+			<div class="tamplate__print">
+				<img src="./one-blank.svg" alt=" #">
+				<div class="tamplate__output run-left" contenteditable="" data-size="first_run_left"
+					style="bottom: 332px; left: 225px;"></div>
+				<div class="tamplate__output run-right" contenteditable="" data-size="first_run_right"
+					style="bottom: 331px; right: 189px;"></div>
+				<div class="tamplate__output run-height" contenteditable="" data-size="first_run_center"
+					style="bottom: 392px; right: 381px;"> </div>
+				<div class="tamplate__output output-lenght output-rotate"
+					style="width: 70px;transform: rotateZ(-90deg);bottom: 670px;right: 28px;" contenteditable=""
+					data-size="blank_lenght">
+				</div>
+				<div class="tamplate__output output-box__one output-rotate"
+					style="width: 70px;transform: rotateZ(-90deg);top: 790px;left: 0px;" contenteditable=""
+					data-size="box_lenght_one">
+				</div>
+				<div class="tamplate__output output-box__two output-rotate"
+					style="width: 70px;transform: rotateZ(-90deg);top: 590px;left: 0px;" contenteditable=""
+					data-size="box_width_two">
+				</div>
+				<div class="tamplate__output output-box__three output-rotate"
+					style="width: 70px;transform: rotateZ(-90deg);left: 0px;top: 390px;" contenteditable=""
+					data-size="box_lenght_three">
+				</div>
+				<div class="tamplate__output output-box__for output-rotate"
+					style="width: 70px;transform: rotateZ(-90deg);top: 190px;left: 0px;" contenteditable=""
+					data-size="box_width_for">
+				</div>
+				<div class="tamplate__output output-width" contenteditable="" data-size="blank_width"
+					style="top: 6px;left: 418px;"> </div>
+			</div>
+
+		</div>
+
+	</div>
+</body>
+
+</html>
